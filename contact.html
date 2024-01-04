@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="./assets/images/WR.png" type="image/x-icon" />
+    <title>Contact - Simple Rakacommerce</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="header animate__animated animate__fadeInDownBig">
+      <a href="#" class="logo"><i class="fa-solid fa-w"></i>RSHOP</a>
+      <nav class="navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./product.html">PRODUCT</a>
+        <a href="./category.html">CATEGORY</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/test1.jpeg">
+          <div class="content">
+            <h3>Sampoerna Mild</h3>
+            <span class="harga">Rp28.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/aqua.jpg">
+          <div class="content">
+            <h3>Aqua Botol</h3>
+            <span class="harga">Rp3.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/after3.png">
+          <div class="content">
+            <h3>Korek Gas</h3>
+            <span class="harga">Rp2.500/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="total"> total : Rp33:500 </div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>lupa password anda <a href="#">tekan disini</a></p>
+        <p>tidak punya akun <a href="#">buat sekarang</a></p>
+        <input type="submit" placeholder="login now" class="btn">
+      </form>
+    </header>
+    <!-- navbar end -->
+
+    <!-- contact start -->
+    <main>
+      <section class="contact">
+        <div class="content animate__animated animate__fadeInUpBig">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sint libero explicabo quisquam animi aut rem. Debitis quod laboriosam natus?</p>
+        </div>
+        <div class="containerContact">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon animate__animated animate__slideInLeft"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text animate__animated animate__slideInDown">
+                <h3>Address</h3>
+                <p>Jl. zzz, <br />Condet,Jakarta Timur,<br />6969</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon animate__animated animate__slideInLeft"><i class="fa-solid fa-phone"></i></div>
+              <div class="text animate__animated animate__slideInRight">
+                <h3>Phone</h3>
+                <p>081323910377</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon animate__animated animate__slideInLeft"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text animate__animated animate__slideInUp">
+                <h3>Email</h3>
+                <p>abunrama@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm animate__animated animate__jackInTheBox">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Nama Lengkap</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>No Telp</span>
+              </div>
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Tulis Pesan...</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="Send" onclick="Send()" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fa-solid fa-w"></i>RSHOP</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias.</p>
+          <div class="share">
+            <a href="https://www.facebook.com/rama.abun.7" class="fab fa-facebook-f"></a>
+            <a href="https://github.com/rakawirahadi" class="fab fa-github"></a>
+            <a href="https://www.instagram.com/rakaawira/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/raka-wirahadikusumah-52248a246/" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+          <a href="#" class="links"> <i class="fas fa-envelope"></i> abunrama@gmail.com </a>
+          <a href="#" class="links"> <i class="fas fa-map-marked-alt"></i> condet, jakarta timur -696969 </a>
+        </div>
+        <div class="box">
+          <h3>quick link</h3>
+          <a href="./index.html" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+          <a href="./product.html" class="links"> <i class="fas fa-arrow-right"></i> product </a>
+          <a href="./category.html" class="links"> <i class="fas fa-arrow-right"></i> category </a>
+          <a href="./contact.html" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email">
+          <input type="submit" value="subscribe" class="btn">
+          <img src="./assets/images/footerfinal-removebg-preview.png" class="payment-img" alt="">
+        </div>
+      </div>
+      <div class="credit"> created by <span>raka wirahadi kusumah</span> | all rights reserved <span id="year"></span></div>
+    </section>
+    <!-- footer end -->
+
+    <script src="assets/source.js"></script>
+  </body>
+</html>
