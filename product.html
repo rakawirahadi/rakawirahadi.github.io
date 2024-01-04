@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="assets/images/WR.png" type="image/x-icon" />
+    <title>Product - Simple Rakacommerce</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="header animate__animated animate__fadeInDownBig">
+      <a href="#" class="logo"><i class="fa-solid fa-w"></i>RSHOP</a>
+      <nav class="navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./product.html">PRODUCT</a>
+        <a href="./category.html">CATEGORY</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/test1.jpeg">
+          <div class="content">
+            <h3>Sampoerna Mild</h3>
+            <span class="harga">Rp28.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/aqua.jpg">
+          <div class="content">
+            <h3>Aqua Botol</h3>
+            <span class="harga">Rp3.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/after3.png">
+          <div class="content">
+            <h3>Korek Gas</h3>
+            <span class="harga">Rp2.500/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="total"> total : Rp33:500 </div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>lupa password anda <a href="#">tekan disini</a></p>
+        <p>tidak punya akun <a href="#">buat sekarang</a></p>
+        <input type="submit" placeholder="login now" class="btn">
+      </form>
+    </header>
+    <!-- navbar end -->
+
+    <!-- product start -->
+    <main>
+      <div class="gallery animate__animated animate__tada">
+        <div class="contentProduct" onclick="buy('Sembako paket 1', 100000)">
+          <img src="./assets/images/sembako1.jpg" />
+          <h3>Sembako</h3>
+          <p> sembako paket 1 (7 produk)
+          </p>
+          <h6>Rp100000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-1">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Sembako paket 2', 150000)">
+          <img src="./assets/images/sembako2.jpg" />
+          <h3>Sembako</h3>
+          <p>
+            Sembako paket 2 (10 produk)
+          </p>
+          <h6>Rp150000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-1">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Sembako paket 3', 175000)">
+          <img src="./assets/images/sembako3.jpg" />
+          <h3>Sembako</h3>
+          <p>
+            Sembako paket 3 (12 produk)
+          </p>
+          <h6>Rp175000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-1">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Sembako paket 4', 80000)">
+          <img src="./assets/images/sembako4.jpg" />
+          <h3>Sembako</h3>
+          <p>
+            Sembako paket 4 (5 produk)
+          </p>
+          <h6>Rp80000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-1">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Rokok Mild', 28000)">
+          <img src="./assets/images/test1.jpeg" />
+          <h3>Rokok</h3>
+          <p>Sampoerna Mild</p>
+          <h6>Rp28000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-2">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Rokok Magnum Blue', 22000)">
+          <img src="./assets/images/test2.jpeg" />
+          <h3>Rokok</h3>
+          <p>Magnum Blue</p>
+          <h6>Rp22000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-2">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Rokok Garpit', 20000)">
+          <img src="./assets/images/test3.jpeg" />
+          <h3>Rokok</h3>
+          <p>Garpit</p>
+          <h6>Rp20000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-2">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Rokok Marmer', 35000)">
+          <img src="./assets/images/test4.jpeg" />
+          <h3>Rokok</h3>
+          <p>Marmer</p>
+          <h6>Rp35000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-2">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Minuman Ale Ale', 1000)">
+          <img src="./assets/images/test5.jpeg" />
+          <h3>Minuman</h3>
+          <p>Ale Ale</p>
+          <h6>Rp1000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-3">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Minuman Granita', 1000)">
+          <img src="./assets/images/test6.jpeg" />
+          <h3>Minuman</h3>
+          <p>Granita</p>
+          <h6>Rp1000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-3">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Minuman Aqua Gelas', 500)">
+          <img src="./assets/images/test7.jpeg" />
+          <h3>Minuman</h3>
+          <p>Aqua Gelas</p>
+          <h6>Rp500</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-3">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Minuman Aqua Botol', 500)">
+          <img src="./assets/images/aqua.jpg" />
+          <h3>Minuman</h3>
+          <p>Aqua Botol</p>
+          <h6>Rp3000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-3">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Ciki Zaky', 500)">
+          <img src="./assets/images/ciki1.jpeg" />
+          <h3>Snack</h3>
+          <p>Ciki Zeky</p>
+          <h6>Rp500</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-4">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Ciki Zett', 1000)">
+          <img src="./assets/images/ciki2.jpeg" />
+          <h3>Snack</h3>
+          <p>Ciki Jetz</p>
+          <h6>Rp1000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-4">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Ciki Chitato', 2000)">
+          <img src="./assets/images/ciki3.jpeg" />
+          <h3>Snack</h3>
+          <p>Ciki Chitato</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-4">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Ciki Chuba', 1000)">
+          <img src="./assets/images/ciki4.jpeg" />
+          <h3>Snack</h3>
+          <p>Ciki Chuba</p>
+          <h6>Rp1000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-4">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Indomie Kaldu Ayam', 2000)">
+          <img src="./assets/images/mie4.jpg" />
+          <h3>Mie Instan</h3>
+          <p>Indomie Kaldu Ayam</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-5">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Mie Sedap Goreng', 2000)">
+          <img src="./assets/images/mie1.jpeg" />
+          <h3>Mie Instan</h3>
+          <p>Mie Sedap Goreng</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-5">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Indomie Goreng', 2000)">
+          <img src="./assets/images/mie2.jpg" />
+          <h3>Mie Instan</h3>
+          <p>Indomie Goreng</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-5">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Indomie Kuah Soto', 2000)">
+          <img src="./assets/images/mie3.jpg" />
+          <h3>Mie Instan</h3>
+          <p>Indomie Kuah Soto</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-5">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Kopi Kapal Api', 1500)">
+          <img src="./assets/images/sachet1.jpeg" />
+          <h3>Minuman Saschet</h3>
+          <p>Kopi Kapal Api</p>
+          <h6>Rp1500</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-6">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Energen Coklat', 2000)">
+          <img src="./assets/images/sachet2.jpg" />
+          <h3>Minuman Saschet</h3>
+          <p>Energen Cokelat</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-6">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Milo', 3000)">
+          <img src="./assets/images/sachet3.png" />
+          <h3>Minuman Saschet</h3>
+          <p>Milo</p>
+          <h6>Rp3000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-6">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Indocafe', 2000)">
+          <img src="./assets/images/sachet4.png" />
+          <h3>Minuman Saschet</h3>
+          <p>Indocafe</p>
+          <h6>Rp2000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-6">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Garam', 3000)">
+          <img src="./assets/images/bahanmakanan1.jpg" />
+          <h3>Bahan Makanan</h3>
+          <p>Garam</p>
+          <h6>Rp3000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-7">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Masako', 1000)">
+          <img src="./assets/images/bahanmakanan2.png" />
+          <h3>Bahan Makanan</h3>
+          <p>Masako</p>
+          <h6>Rp1000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-7">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Telur', 1500)">
+          <img src="./assets/images/bahanmakanan3.jpeg" />
+          <h3>Bahan Makanan</h3>
+          <p>Telur</p>
+          <h6>Rp1500</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-7">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Gula', 4000)">
+          <img src="./assets/images/bahanmakanan4.jpg" />
+          <h3>Bahan Makanan</h3>
+          <p>Gula</p>
+          <h6>Rp4000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-7">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Gas LPG', 20000)">
+          <img src="./assets/images/etc1.jpg" />
+          <h3>Etc</h3>
+          <p>Gas LPG 3KG</p>
+          <h6>Rp20000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-8">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Popok Bayi', 3000)">
+          <img src="./assets/images/etc2.jpeg" />
+          <h3>Etc</h3>
+          <p>Popok bayi</p>
+          <h6>Rp3000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-8">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Mama Lemon', 7000)">
+          <img src="./assets/images/etc3.png" />
+          <h3>Etc</h3>
+          <p>Sabun Cuci</p>
+          <h6>Rp7000</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buy-8">Buy Now</button>
+        </div>
+        <div class="contentProduct" onclick="buy('Korek Gas', 2500)">
+          <img src="./assets/images/etc4.jpeg" />
+          <h3>Etc</h3>
+          <p>Korek Gas</p>
+          <h6>Rp2500</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+          </ul>
+          <button class="buy-8">Buy Now</button>
+        </div>
+      </div>
+    </main>
+    <!-- product end -->
+
+    <!-- footer start -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fa-solid fa-w"></i>RSHOP</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias.</p>
+          <div class="share">
+            <a href="https://www.facebook.com/rama.abun.7" class="fab fa-facebook-f"></a>
+            <a href="https://github.com/rakawirahadi" class="fab fa-github"></a>
+            <a href="https://www.instagram.com/rakaawira/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/raka-wirahadikusumah-52248a246/" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+          <a href="#" class="links"> <i class="fas fa-envelope"></i> abunrama@gmail.com </a>
+          <a href="#" class="links"> <i class="fas fa-map-marked-alt"></i> condet, jakarta timur -696969 </a>
+        </div>
+        <div class="box">
+          <h3>quick link</h3>
+          <a href="./index.html" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+          <a href="./product.html" class="links"> <i class="fas fa-arrow-right"></i> product </a>
+          <a href="./category.html" class="links"> <i class="fas fa-arrow-right"></i> category </a>
+          <a href="./contact.html" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email">
+          <input type="submit" value="subscribe" class="btn">
+          <img src="./assets/images/footerfinal-removebg-preview.png" class="payment-img" alt="">
+        </div>
+      </div>
+      <div class="credit"> created by <span>raka wirahadi kusumah</span> | all rights reserved <span id="year"></span></div>
+    </section>
+    <!-- footer end -->
+
+    <script src="assets/source.js"></script>
+  </body>
+</html>
