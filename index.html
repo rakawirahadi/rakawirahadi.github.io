@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="assets/images/WR.png" type="image/x-icon" />
+    <title>HOME - Simple Rakacommerce</title>
+  </head>
+  <body>
+    <div class="chat fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+    <div
+      class="instagram fa fa-brands fa-square-instagram"
+      onclick="sosmed()"
+    ></div>
+    <!-- header start -->
+    <header class="header animate__animated animate__fadeInDownBig">
+      <a href="#" class="logo"><i class="fa-solid fa-w"></i>RSHOP</a>
+      <nav class="navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./product.html">PRODUCT</a>
+        <a href="./category.html">CATEGORY</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/test1.jpeg">
+          <div class="content">
+            <h3>Sampoerna Mild</h3>
+            <span class="harga">Rp28.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/aqua.jpg">
+          <div class="content">
+            <h3>Aqua Botol</h3>
+            <span class="harga">Rp3.000/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./assets/images/after3.png">
+          <div class="content">
+            <h3>Korek Gas</h3>
+            <span class="harga">Rp2.500/-</span>
+            <span class="jumlah">Jmlh : 1</span>
+          </div>
+        </div>
+        <div class="total"> total : Rp33:500 </div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>lupa password anda <a href="#">tekan disini</a></p>
+        <p>tidak punya akun <a href="#">buat sekarang</a></p>
+        <input type="submit" placeholder="login now" class="btn">
+      </form>
+    </header>
+    <!-- header end -->
+<!-- home section start -->
+<section class="home" id="home">
+  <div class="homecontent">
+    <h3> Fresh and <span>original</span> Products for your</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero corporis beatae, facere quis accusamus.</p>
+    <a href="#" class="btn">belanja sekarang</a>
+    <h3><span>TIDAK MENERIMA KASBON</span></h3>
+  </div>
+</section>
+<!-- home section edn -->
+
+<!-- product end start -->
+    <main>
+      <div class="container">
+        <h2 class="title">Best Seller</h2>
+        <div class="row animate__animated animate__flash">
+          <div class="col" onclick="buy('Sembako Paket 3', 150000)">
+            <img src="assets/images/sembako3.jpg" />
+            <h4>Sembako</h4>
+            <p>Rp. 150.000</p>
+          </div>
+          <div class="col" onclick="buy('Rokok Sampoerna Mild', 28000)">
+            <img src="assets/images/test1.jpeg" />
+            <h4>Rokok</h4>
+            <p>Rp. 28.000</p>
+          </div>
+          <div class="col" onclick="buy('Rokok Garpit', 20000)">
+            <img src="assets/images/test3.jpeg" />
+            <h4>Rokok</h4>
+            <p>Rp. 20.000</p>
+          </div>
+          <div class="col" onclick="buy('Aqua Gelas', 500)">
+            <img src="assets/images/after.png" />
+            <h4>Minuman</h4>
+            <p>Rp. 500</p>
+          </div>
+          <div class="col" onclick="buy('Aqua Botol', 3000)">
+            <img src="assets/images/aqua.jpg" />
+            <h4>Minuman</h4>
+            <p>Rp. 3.000</p>
+          </div>
+          <div class="col" onclick="buy('Chuba', 1000)">
+            <img src="assets/images/ciki4.jpeg" />
+            <h4>Snack</h4>
+            <p>Rp. 1.000</p>
+          </div>
+          <div class="col" onclick="buy('Indomie Goreng', 2000)">
+            <img src="assets/images/mie2.jpg" />
+            <h4>Mie Instan</h4>
+            <p>Rp. 2.000</p>
+          </div>
+          <div class="col" onclick="buy('Indomie Soto', 2000)">
+            <img src="assets/images/mie3.jpg" />
+            <h4>Mie Instan</h4>
+            <p>Rp. 2.000</p>
+          </div>
+          <div class="col" onclick="buy('Kopi Kapal Api', 1500)">
+            <img src="assets/images/sachet1.jpeg" />
+            <h4>Minuman Sachet</h4>
+            <p>Rp. 1.500</p>
+          </div>
+          <div class="col" onclick="buy('Indocafe', 2000)">
+            <img src="assets/images/after2.png" />
+            <h4>Minuman Sachet</h4>
+            <p>Rp. 2.000</p>
+          </div>
+          <div class="col" onclick="buy('Telur', 1500)">
+            <img src="assets/images/bahanmakanan3.jpeg" />
+            <h4>Bahan Makanan</h4>
+            <p>Rp. 1.500</p>
+          </div>
+          <div class="col" onclick="buy('Korek Gas', 2500)">
+            <img src="assets/images/after3.png" />
+            <h4>Etc</h4>
+            <p>Rp. 2.500</p>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- product home end -->
+
+<!-- footer start -->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3><i class="fa-solid fa-w"></i>RSHOP</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias.</p>
+      <div class="share">
+        <a href="https://www.facebook.com/rama.abun.7" class="fab fa-facebook-f"></a>
+        <a href="https://github.com/rakawirahadi" class="fab fa-github"></a>
+        <a href="https://www.instagram.com/rakaawira?igsh=MWF3NW9mZmVzd2ZybA==" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/raka-wirahadikusumah-52248a246/" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +62 813-2391-0377 </a>
+      <a href="#" class="links"> <i class="fas fa-envelope"></i> abunrama@gmail.com </a>
+      <a href="#" class="links"> <i class="fas fa-map-marked-alt"></i> condet, jakarta timur -696969 </a>
+    </div>
+    <div class="box">
+      <h3>quick link</h3>
+      <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+      <a href="./product.html" class="links"> <i class="fas fa-arrow-right"></i> product </a>
+      <a href="./category.html" class="links"> <i class="fas fa-arrow-right"></i> category </a>
+      <a href="./contact.html" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+    </div>
+    <div class="box">
+      <h3>newsletter</h3>
+      <p>subscribe for latest updates</p>
+      <input type="email" placeholder="your email" class="email">
+      <input type="submit" value="subscribe" class="btn">
+      <img src="./assets/images/footerfinal-removebg-preview.png" class="payment-img" alt="">
+    </div>
+  </div>
+  <div class="credit"> created by <span>raka wirahadi kusumah</span> | all rights reserved <span id="year"></span></div>
+</section>
+<!-- footer end -->
+    <script src="assets/source.js"></script>
+  </body>
+</html>
